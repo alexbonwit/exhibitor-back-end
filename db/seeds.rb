@@ -1,4 +1,4 @@
-require 'faker'
 
 
-Artist.create()
+
+Artist.create(name: Faker::Artist.name)
