@@ -1,2 +1,3 @@
 class ExhibitArtistsController < ApplicationController
+    
 end
