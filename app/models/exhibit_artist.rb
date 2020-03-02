@@ -1,0 +1,2 @@
+class ExhibitArtist < ApplicationRecord
+end
