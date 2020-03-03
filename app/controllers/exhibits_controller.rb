@@ -1,12 +1,12 @@
 class ExhibitsController < ApplicationController
     def index
         exhibits = Exhibit.all
-        render json: exhibits, include :artists :museum
+        render json: exhibits, include: :artists
     end
 
     def show
         exhibit = Exhibit.find_by(id: params[:id])
-        render json: exhibit.artists, include: :museum
+        render json: exhibit.artists
     end
 
     def create
