@@ -1,6 +1,6 @@
 class ExhibitsController < ApplicationController
     def index
-        exhibits = Exhibit.all.order(id: :desc)
+        exhibits = Exhibit.all
         render json: exhibits, include: [:artists, :museum]
     end
 
