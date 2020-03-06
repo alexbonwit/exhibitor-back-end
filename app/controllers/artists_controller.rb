@@ -1,7 +1,7 @@
 class ArtistsController < ApplicationController
     def index
-        artists = Artist.all
-        render json: artists
+        artists = Artist.all.order(id: :desc)
+        render json: artists, include: :exhibits
     end
 
     def show

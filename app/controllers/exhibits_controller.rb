@@ -6,7 +6,7 @@ class ExhibitsController < ApplicationController
 
     def show
         exhibit = Exhibit.find_by(id: params[:id])
-        render json: exhibit.artists
+        render json: exhibit, include: :artists
     end
 
     def create
