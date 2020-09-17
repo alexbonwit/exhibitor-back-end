@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 4.3.3'
+gem 'puma', '~> 4.3.5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -30,6 +30,14 @@ gem "rack", ">= 2.2.3"
 gem "websocket-extensions", ">= 0.1.5"
 
 gem 'faker'
+
+gem "activesupport", ">= 6.0.3.1"
+
+gem "actionpack", ">= 6.0.3.2"
+
+gem "actionview", ">= 6.0.3.3"
+
+gem "activestorage", ">= 6.0.3.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
